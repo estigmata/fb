@@ -1,0 +1,21 @@
+body {
+  background-color: #E9EBEE;
+}
+
+.custom-navbar {
+  background-color: #4267B2 !important;
+  border-bottom: 1px solid #29487D;
+}
+
+.custom-navbar a.nav-link {
+  color: rgba(255, 255, 255, .75) !important;
+}
+
+.custom-navbar a.nav-link:hover {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+main {
+  margin-top: 70px;
+  padding: 20px 10px;
+}
