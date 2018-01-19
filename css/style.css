@@ -38,10 +38,10 @@ main {
 #sidebar-wrapper {
   z-index: 1000;
   position: fixed;
+  top: 75px;
   left: 250px;
-  width: 0;
+  width: 0%;
   height: 100%;
-  margin-left: -250px;
   overflow-y: auto;
   background: #000;
   -webkit-transition: all 0.5s ease;
@@ -51,7 +51,7 @@ main {
 }
 
 #wrapper.toggled #sidebar-wrapper {
-  width: 250px;
+  width: 100%;
 }
 
 #page-content-wrapper {
@@ -62,16 +62,12 @@ main {
 
 #wrapper.toggled #page-content-wrapper {
   position: absolute;
-  margin-right: -250px;
 }
 
 
 /* Sidebar Styles */
 
 #sidebar-wrapper {
-  margin-right: -250px;
-  right: 0;
-  width: 250px;
   background: rgb(0,0,0);
   position: fixed;
   height: 100%;
@@ -87,7 +83,7 @@ main {
 .sidebar-nav {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -137,8 +133,7 @@ main {
 }
 
 #sidebar-wrapper.active {
-  right: 250px;
-  width: 250px;
+  width: 100%;
   transition: all 0.5s ease-out 0s;
   -webkit-transition: all 0.5s ease-out 0s;
   -moz-transition: all 0.5s ease-out 0s;
@@ -148,4 +143,12 @@ main {
 
 .toggle {
   margin: 5px 5px 0 0;
+}
+
+.custom.sidebar-nav a:hover {
+  color: #4267B2
+}
+
+.sidebar-nav strong {
+  color: #ccc;
 }
